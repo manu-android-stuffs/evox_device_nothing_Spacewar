@@ -21,6 +21,7 @@ namespace hardware {
 namespace biometrics {
 namespace fingerprint {
 
+
 void onClientDeath(void* cookie) {
     ALOGI("FingerprintService has died");
     Session* session = static_cast<Session*>(cookie);
@@ -79,7 +80,7 @@ ndk::ScopedAStatus Session::authenticate(int64_t operationId,
     if (error) {
         ALOGE("authenticate failed: %d", error);
         mCb->onError(Error::UNABLE_TO_PROCESS, error);
-    }
+   }
 
     *out = SharedRefBase::make<CancellationSignal>(this);
     return ndk::ScopedAStatus::ok();
@@ -121,9 +122,6 @@ ndk::ScopedAStatus Session::getAuthenticatorId() {
     uint64_t auth_id = mDevice->get_authenticator_id(mDevice);
     ALOGI("getAuthenticatorId: %ld", auth_id);
     mCb->onAuthenticatorIdRetrieved(auth_id);
-
-    mDevice->goodixExtCmd(mDevice, 0, 0);
-    
     return ndk::ScopedAStatus::ok();
 }
 
@@ -225,6 +223,7 @@ ndk::ScopedAStatus Session::cancel() {
 
 ndk::ScopedAStatus Session::close() {
     ALOGI("close");
+
     mClosed = true;
     mCb->onSessionClosed();
     AIBinder_DeathRecipient_delete(mDeathRecipient);
@@ -301,6 +300,7 @@ AcquiredInfo Session::VendorAcquiredFilter(int32_t info, int32_t* vendorCode) {
 
 bool Session::checkSensorLockout() {
     LockoutMode lockoutMode = mLockoutTracker.getMode();
+
 
     if (lockoutMode == LockoutMode::PERMANENT) {
         ALOGE("Fail: lockout permanent");
