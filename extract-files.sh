@@ -87,7 +87,8 @@ function blob_fixup() {
             sed -Ei "/media_codecs_(google_audio|google_telephony|vendor_audio)/d" "${2}"
 >>>>>>> 6d1ccc3 (device.mk: Use libcrypto-v33 for widevine libs)
             ;;
-        vendor/lib64/libwvhidl.so)
+        vendor/lib64/libwvhidl.so \
+        |vendor/lib64/mediadrm/libwvdrmengine.so)
             "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "${2}"
             ;;
         *)
