@@ -5,15 +5,16 @@
 #
 
 # Derp Flags
-DERP_BUILDTYPE=Official
-DERP_VERSION_APPEND_TIME_OF_DAY=true
-EXTRA_UDFPS_ICONS=true
-TARGET_NOT_USES_BLUR=true
+#DERP_BUILDTYPE=Official
+#DERP_VERSION_APPEND_TIME_OF_DAY=true
+#EXTRA_UDFPS_ICONS=true
+#TARGET_NOT_USES_BLUR=true
 TARGET_USES_PICO_GAPPS=true
+#TARGET_USES_MINI_GAPPS=true
 
 # Remove Packages
-PRODUCT_PACKAGES += \
-    RemovePackages
+#PRODUCT_PACKAGES += \
+ #   RemovePackages
 
 # ViPER4AndroidFX
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
@@ -284,9 +285,14 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
     android.hardware.gnss.visibility_control@1.0.vendor \
     android.hardware.gnss@2.1.vendor \
+<<<<<<< HEAD
     libloc_net_iface.vendor \
     liblocdiagiface.vendor \
     libprocessgroup.vendor
+=======
+    #libloc_net_iface.vendor \
+    #liblocdiagiface.vendor
+>>>>>>> 52dda24 (Spacewar: Initialize for Evolution X 10.x)
 
 # Health
 PRODUCT_PACKAGES += \
