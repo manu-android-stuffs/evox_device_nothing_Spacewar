@@ -642,8 +642,8 @@ vendor/lib64/vendor.qti.diaghal@1.0.so
 system/etc/sysconfig/preinstalled-packages-audioeffect.xml
 system/priv-app/NothingAudioEffectService/NothingAudioEffectService.apk
 vendor/etc/dirac/dirac_resource.dar
-vendor/lib64/libdirac.so
-vendor/lib64/soundfx/libdiraceffect_NT.so
+vendor/lib/libdirac.so
+vendor/lib/soundfx/libdiraceffect_NT.so
 
 # Display Calibration data
 vendor/etc/qdcm_calib_data_rm692e5_amoled_fhd+_120hz_cmd_mode_dsi_visionox_panel.xml
@@ -711,7 +711,6 @@ system_ext/lib64/libdpmctmgr.so|206949728b98a513683468209dbce86ed29412b8
 system_ext/lib64/libdpmfdmgr.so|da636fca9a9a91a897d17fd519448b10053a696b
 system_ext/lib64/libdpmframework.so|d974f04f110b3c1a1282d78bb0ff8a29dc022439
 system_ext/lib64/libdpmtcm.so|5521469cac3a2bec3da66cd36637df83ee59b97e
-system_ext/lib64/vendor.qti.diaghal@1.0.so|8afba353fd94d2e955dd626a0eb8029530219732
 system_ext/lib64/vendor.qti.hardware.dpmservice@1.0.so|de7501e60ba32563721022eb8ad0ca0230a7c03b
 system_ext/lib64/vendor.qti.hardware.dpmservice@1.1.so|183028009a4a77c85623a1cd50ba6b1a5340ef96
 system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|ebf1f753ed24f8b6ba87c5f27c628889c38d0a85
@@ -803,7 +802,6 @@ vendor/lib/libgps.utils.so
 vendor/lib/libloc_core.so
 vendor/lib/liblocation_api.so
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so
-vendor/lib64/hw/vendor.qti.gnss@4.2-impl.so
 vendor/lib64/hw/vendor.qti.gnss@4.3-impl.so
 vendor/lib64/libbatching.so
 vendor/lib64/libgeofencing.so
