@@ -105,11 +105,10 @@ ro.crypto.dm_default_key.options_format.version=2
 ro.crypto.volume.metadata.method=dm-default-key
 
 # Dirac
-ro.vendor.dirac.acs.forceAfm=true
-ro.vendor.dirac.startAtBoot=3
-ro.vendor.dirac.acs.storeSettings=1 
-ro.vendor.dirac.acs.ignore_error=1
-ro.vendor.dirac.acs.startAtBoot=3
+persist.vendor.newdirac.dump=0
+persist.vendor.newdirac.enable.value=1.000000
+persist.vendor.newdirac.volume.value=0.000000
+persist.vendor.newdirac.cur.config=MUSIC
 
 # Display
 vendor.display.comp_mask=0
