@@ -50,7 +50,7 @@ media.stagefright.enable-qcp=true
 media.stagefright.enable-scan=true
 media.stagefright.thumbnail.prefer_hw_codecs=true
 ro.media.recorder-max-base-layer-fps=60
-vendor.mm.enable.qcom_parser=16777215
+vendor.mm.enable.qcom_parser=16695295
 
 # NetMgr
 ro.vendor.use_data_netmgrd=true
@@ -94,5 +94,5 @@ ro.vendor.qti.va_aosp.support=1
 persist.debug.wfd.enable=1
 
 # Nt Feature
-ro.build.nothing.feature.base=0x8124a040124b4247b97ffL
-ro.build.nothing.feature.diff.device.Spacewar=0x2a4041a032c34800
+ro.build.nothing.feature.base=0x4418438124a040126b4247b97ffL
+ro.build.nothing.feature.diff.device.Spacewar=0x401aa4142ac041a032c34800L
