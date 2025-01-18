@@ -283,14 +283,9 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
     android.hardware.gnss.visibility_control@1.0.vendor \
     android.hardware.gnss@2.1.vendor \
-<<<<<<< HEAD
     libloc_net_iface.vendor \
     liblocdiagiface.vendor \
     libprocessgroup.vendor
-=======
-    #libloc_net_iface.vendor \
-    #liblocdiagiface.vendor
->>>>>>> 52dda24 (Spacewar: Initialize for Evolution X 10.x)
 
 # Health
 PRODUCT_PACKAGES += \
