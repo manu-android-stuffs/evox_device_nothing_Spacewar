@@ -60,7 +60,8 @@ class NothingUdfpsHander : public UdfpsHandler {
                 continue;
             }
 
-            mDevice->goodixExtCmd(mDevice, readBool(fd) ? 1 : 0, 0);
+            if (mDevice)
+                mDevice->goodixExtCmd(mDevice, readBool(fd) ? 1 : 0, 0);
         }
     }).detach();
     }
