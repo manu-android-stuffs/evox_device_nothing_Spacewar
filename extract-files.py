@@ -53,7 +53,9 @@ blob_fixups: blob_fixups_user_type = {
     ('system_ext/lib/libwfdservice.so', 'system_ext/lib64/libwfdservice.so'): blob_fixup()
         .replace_needed('android.media.audio.common.types-V2-cpp.so', 'android.media.audio.common.types-V4-cpp.so'),
     'vendor/lib64/hw/com.qti.chi.override.so': blob_fixup()
-        .add_needed('libcamera_metadata_shim.so')
+        .add_needed('libcamera_metadata_shim.so'),
+    ('vendor/lib64/libdpps.so', 'vendor/lib64/libsnapdragoncolor-manager.so',): blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so')
 }  # fmt: skip
 
 module = ExtractUtilsModule(
