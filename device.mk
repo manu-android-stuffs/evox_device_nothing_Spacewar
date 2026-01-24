@@ -21,6 +21,11 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/nothing/Spacewar/Spacewar-vendor.mk)
 
+# MicroG
+ifeq ($(WITH_MICROG),true)
+$(call inherit-product, vendor/partner_gms/products/gms.mk)
+endif
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \

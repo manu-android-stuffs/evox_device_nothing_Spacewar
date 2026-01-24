@@ -11,5 +11,10 @@
     "repository"  : "nyxalune/vendor_nothing_Spacewar",
     "remote"      : "github-non-los",
     "target_path" : "vendor/nothing/Spacewar"
+  },
+  {
+    "repository"  : "lineageos4microg/android_vendor_partner_gms",
+    "remote"      : "github-non-los",
+    "target_path" : "vendor/partner_gms"
   }
 ]

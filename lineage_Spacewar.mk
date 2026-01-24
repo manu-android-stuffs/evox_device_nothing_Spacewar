@@ -19,7 +19,8 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_INCLUDE_ACCORD := true
 TARGET_SUPPORT_BOOT_ANIMATIONS := true
 BUILD_BCR := true
-WITH_GMS := true
+WITH_GMS := false
+WITH_MICROG := true
 
 # Enforce Product Packages Existance.
 TARGET_DISABLE_EPPE := true
